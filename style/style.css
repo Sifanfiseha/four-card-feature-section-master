@@ -81,6 +81,10 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: var(--Very-Light-Gray);
     color: var(--Very-Dark-Blue);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 section {
     padding: 1rem;
