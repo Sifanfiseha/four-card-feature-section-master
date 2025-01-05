@@ -92,7 +92,7 @@ section {
 .cards {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 .card {
     background-color: #fff;
@@ -110,13 +110,13 @@ section {
     justify-content: center;
 }
 .card1 {
-    border-top: 8px solid var(--Blue);
+    border-top: 8px solid var(--Cyan);
 }
 .card2 {
     border-top: 8px solid var(--Red);
 }
 .card3 {
-    border-top: 8px solid var(--Cyan);
+    border-top: 8px solid var(--Orange);
 }
 .card4 {
     border-top: 8px solid var(--Blue);
@@ -149,7 +149,7 @@ section {
 }
 .t1 {
     font-size: 1.8rem;
-    font-weight: 100;
+    font-weight: 200;
     color: var(--Grayish-Blue);
 }
 .t2 {
