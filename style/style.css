@@ -78,5 +78,95 @@ h6 {
 */
 body {
     font-size: 15px;
-    font-family: "Poppins", serif;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--Very-Light-Gray);
+    color: var(--Very-Dark-Blue);
+}
+section {
+    padding: 1rem;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.card {
+    background-color: #fff;
+    box-shadow: 10px 0px 20px rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 1rem;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.725rem;
+}
+.section-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card1 {
+    border-top: 8px solid var(--Blue);
+}
+.card2 {
+    border-top: 8px solid var(--Red);
+}
+.card3 {
+    border-top: 8px solid var(--Cyan);
+}
+.card4 {
+    border-top: 8px solid var(--Blue);
+}
+.img {
+    display: flex;
+    justify-content: flex-end;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.content p {
+    color: var(--Grayish-Blue);
+}
+.md {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-discription {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.t1 {
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: var(--Grayish-Blue);
+}
+.t2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.section-discription p {
+    color: var(--Grayish-Blue);
+    margin-top: 1rem;
+    width: 470px;
+    text-align: center;
+}
+@media (min-width: 600px) {
+    .cards {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+    .t1,
+    .t2 {
+        font-size: 2rem;
+    }
 }
