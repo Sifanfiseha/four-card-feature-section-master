@@ -98,7 +98,7 @@ section {
     background-color: #fff;
     box-shadow: 10px 0px 20px rgb(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding: 1rem;
+    padding: 1.5rem;
     width: 320px;
     display: flex;
     flex-direction: column;
@@ -110,16 +110,16 @@ section {
     justify-content: center;
 }
 .card1 {
-    border-top: 8px solid var(--Cyan);
+    border-top: 6px solid var(--Cyan);
 }
 .card2 {
-    border-top: 8px solid var(--Red);
+    border-top: 6px solid var(--Red);
 }
 .card3 {
-    border-top: 8px solid var(--Orange);
+    border-top: 6px solid var(--Orange);
 }
 .card4 {
-    border-top: 8px solid var(--Blue);
+    border-top: 6px solid var(--Blue);
 }
 .img {
     display: flex;
@@ -148,12 +148,12 @@ section {
     justify-content: center;
 }
 .t1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 200;
     color: var(--Grayish-Blue);
 }
 .t2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 .section-discription p {
