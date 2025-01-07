@@ -121,7 +121,7 @@ header p {
     text-align: center;
 }
 @media (min-width: 1000px) {
-    .cards {
+    main {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
