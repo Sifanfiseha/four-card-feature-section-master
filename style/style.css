@@ -12,70 +12,16 @@
     --fw-400: 400;
     --fw-600: 600;
 }
-/* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
-/* 2. Remove default margin */
 * {
     margin: 0;
+    padding: 0;
 }
 
-body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
-}
-
-/* 5. Improve media defaults */
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-/* 6. Inherit fonts for form controls */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-/* 7. Avoid text overflows */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
-/* 8. Improve line wrapping */
-p {
-    text-wrap: pretty;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-wrap: balance;
-}
-
-/*
-  9. Create a root stacking context
-*/
 body {
     font-size: 15px;
     font-family: "Poppins", sans-serif;
@@ -83,11 +29,14 @@ body {
     color: var(--Very-Dark-Blue);
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
+    line-height: 1.5;
 }
-section {
-    padding: 1rem;
+header {
+    text-align: center;
 }
 .cards {
     display: flex;
@@ -98,13 +47,13 @@ section {
     background-color: #fff;
     box-shadow: 10px 0px 20px rgb(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding: 1.5rem;
+    padding: 2rem;
     width: 320px;
     display: flex;
     flex-direction: column;
     gap: 1.725rem;
 }
-.section-card {
+main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,6 +82,9 @@ section {
 .content p {
     color: var(--Grayish-Blue);
 }
+.content h2 {
+    font-size: 1.2rem;
+}
 .md {
     display: flex;
     display: flex;
@@ -148,21 +100,27 @@ section {
     justify-content: center;
 }
 .t1 {
-    font-size: 2rem;
+    font-size: 1.725rem;
     font-weight: 200;
     color: var(--Grayish-Blue);
 }
 .t2 {
-    font-size: 2rem;
+    font-size: 1.725rem;
     font-weight: 600;
+    padding-bottom: 1rem;
+}
+header p {
+    color: var(--Grayish-Blue);
+    max-width: 450px;
+    margin: 0 1rem;
 }
 .section-discription p {
     color: var(--Grayish-Blue);
     margin-top: 1rem;
-    width: 470px;
+    max-width: 60ch;
     text-align: center;
 }
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
     .cards {
         flex-direction: row;
         align-items: center;
@@ -172,5 +130,8 @@ section {
     .t1,
     .t2 {
         font-size: 2rem;
+    }
+    .content h2 {
+        font-size: 1.5rem;
     }
 }
